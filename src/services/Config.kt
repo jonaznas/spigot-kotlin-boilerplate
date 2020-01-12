@@ -6,7 +6,9 @@ class Config {
     private val plugin = Instance.plugin
     private val config: FileConfiguration = plugin.config
 
-    fun load() {
+    init {
+        // These are the default values for the created config file
+        // Do not type any login data here directly
         config.addDefault("database.host", "127.0.0.1")
         config.addDefault("database.user", "root")
         config.addDefault("database.pass", "mypassword")

@@ -8,8 +8,8 @@ import plugin.services.Instance
 class Main : JavaPlugin() {
     override fun onEnable() {
         Instance(this)
-        Config().load()
-        Commands().register()
+        Config()
+        Commands()
         Bukkit.getLogger().info("Plugin enabled")
     }
 }

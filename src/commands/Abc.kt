@@ -1,26 +1,30 @@
 package plugin.commands
 
 import hazae41.minecraft.kutils.bukkit.msg
+import kotlinx.coroutines.async
+import kotlinx.coroutines.runBlocking
 import plugin.services.Mysql
 import org.bukkit.command.Command
-import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 
-object Abc : CommandExecutor {
-    override fun onCommand(sender: CommandSender?, command: Command?, label: String?, args: Array<out String>?): Boolean {
-        val mysql = Mysql()
-        mysql.query("select * from mytable where id = ? limit 1", listOf(10))
-        { result ->
-            result.next()
-            /** Get column by name **/
-            // result.getString("columnname")
+object Abc {
+    private val mysql = Mysql()
 
-            /** Get last insert id **/
-            // result.getInt(1).toString()
-        }
-
+    operator fun invoke(sender: CommandSender?, command: Command?, label: String?, args: Array<String>?) {
+        val myData = getSomeData()
         sender?.msg("&bThis is the test command")
+        sender?.msg("&bThe SQL Result is: &e$myData")
+    }
 
-        return true
+    private fun getSomeData(): String = runBlocking {
+        val query = async {
+            mysql.query("select * from mytable where id = ? limit 1", listOf(10))
+            { pstmt ->
+                val rs = pstmt.resultSet
+                rs.next()
+                return@query rs.getString("username") // return the value you want to use after the query
+            }
+        }
+        return@runBlocking query.await() as String // here you get the value from above
     }
 }
