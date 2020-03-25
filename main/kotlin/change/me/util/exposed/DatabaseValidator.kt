@@ -1,7 +1,7 @@
 package change.me.util.exposed
 
-import org.bukkit.Bukkit
-import kotlin.system.exitProcess
+import change.me.util.plugin.Instance
+import hazae41.minecraft.kutils.bukkit.warning
 
 class DatabaseValidator(
     private val dbHost: String?,
@@ -9,12 +9,13 @@ class DatabaseValidator(
     private val dbUser: String?,
     private val dbPass: String?
 ) {
+    private val plugin = Instance.plugin
 
-    fun validateEnvironment() {
+    fun validateConfigValues() {
         val valuesExist = checkExist()
 
         if (!valuesExist.first) {
-            Bukkit.getLogger().warning("Database variable \"${valuesExist.second}\" is undefined")
+            plugin.warning("Database variable \"${valuesExist.second}\" is undefined")
         }
     }
 

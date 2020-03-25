@@ -1,10 +1,11 @@
 #### ?
 This is a template written in Kotlin for creating high level plugins for Spigot servers.
-It comes with configured gradle, debug server, mysql-pool (with jdbc, async querys and prepared statements), config and other helpful stuff.
+It comes with configured gradle, debug server, command mapping with annotation, sql framework, config and other helpful stuff.
 
 #### Whats included
 
 - [HikariCP](https://github.com/brettwooldridge/HikariCP) - managing mysql pool
+- [Exposed](https://github.com/JetBrains/Exposed) - sql framework
 - [Gradle plugin-yml](https://github.com/Minecrell/plugin-yml) - generating plugin.yml from gradle build config
 - [Shadow](https://github.com/johnrengelman/shadow) - creating fat/uber JARs, apply file transforms, and relocate packages for applications and libraries
 - [Kutils](https://github.com/hazae41/mc-kutils) - ultimate Kotlin library for Minecraft plugin development

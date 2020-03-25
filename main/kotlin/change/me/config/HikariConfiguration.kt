@@ -17,7 +17,7 @@ class HikariConfiguration {
     init {
         DatabaseValidator(
             dbHost, dbName, dbUser, dbPass
-        ).validateEnvironment()
+        ).validateConfigValues()
 
         val url = "jdbc:postgresql://$dbHost:$dbPort/$dbName"
         Class.forName("org.postgresql.Driver")
