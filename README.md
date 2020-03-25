@@ -16,6 +16,10 @@ It comes with configured gradle, debug server, command mapping with annotation, 
 I recommand to use [JetBrains IntelliJ IDEA](https://www.jetbrains.com/de-de/idea/). There is also an gradle integration build-in.
 To use this project just clone this repository and import the gradle project.
 
+#### Database
+
+The Database is configured to PostgreSQL. To change it to MySQL, Oracle, SQLite, H2 or SQL Server take a look at [this documentation](https://github.com/JetBrains/Exposed/wiki/DataBase-and-DataSource)
+
 #### Plugin.yml
 You can configure the plugin.yml at the bottom of the `build.gradle` file
 
