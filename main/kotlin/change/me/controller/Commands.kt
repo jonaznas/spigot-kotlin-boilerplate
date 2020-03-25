@@ -1,4 +1,4 @@
-@file:Suppress("unused")
+@file:Suppress("unused", "UNUSED_PARAMETER")
 
 package change.me.controller
 
@@ -12,5 +12,9 @@ class Commands {
     @CommandMapping("abc")
     fun abcCommand(sender: CommandSender, cmd: Command, label: String, args: Array<String>) {
         sender.msg("Abc command works! :p")
+
+        Thread.sleep(2000L)
+
+        sender.msg("Hey")
     }
 }

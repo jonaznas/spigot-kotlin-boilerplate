@@ -1,7 +1,9 @@
 package change.me.util.command
 
+import change.me.controller.Commands
 import change.me.util.plugin.Instance
-import hazae41.minecraft.kutils.bukkit.schedule
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
@@ -12,7 +14,7 @@ import java.lang.reflect.Method
 class CommandInitializer {
 
     fun defineCommands() {
-        val reflections = Reflections("change.me.command", MethodAnnotationsScanner())
+        val reflections = Reflections(Commands::class.java, MethodAnnotationsScanner())
         val annotated = reflections.getMethodsAnnotatedWith(CommandMapping::class.java)
 
         for (method in annotated) {
@@ -33,7 +35,7 @@ class CommandInitializer {
         cmd: Command,
         label: String,
         args: Array<String>
-    ) {
-        Instance.plugin.schedule(async = true) { method.invoke(instance, sender, cmd, label, args) }
+    ) = GlobalScope.launch {
+        method.invoke(instance, sender, cmd, label, args)
     }
 }
