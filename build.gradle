@@ -83,8 +83,12 @@ bukkit {
     prefix = "KotlinSpigot"
 
     commands {
-        register("abc") {
+        abc {
             description = "This is a test command!"
+            usage = "/<command>"
+        }
+        test {
+            description = "This is a database test command!"
             usage = "/<command>"
         }
     }
