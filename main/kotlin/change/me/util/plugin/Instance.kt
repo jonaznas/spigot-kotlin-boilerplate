@@ -1,4 +1,4 @@
-package plugin.services
+package change.me.util.plugin
 
 import org.bukkit.plugin.java.JavaPlugin
 
