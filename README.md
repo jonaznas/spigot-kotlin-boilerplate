@@ -6,7 +6,6 @@ It comes with configured gradle, debug server, command mapping with annotation, 
 
 - [HikariCP](https://github.com/brettwooldridge/HikariCP) - managing mysql pool
 - [Exposed](https://github.com/JetBrains/Exposed) - sql framework
-- [Gradle plugin-yml](https://github.com/Minecrell/plugin-yml) - generating plugin.yml from gradle build config
 - [Shadow](https://github.com/johnrengelman/shadow) - creating fat/uber JARs, apply file transforms, and relocate packages for applications and libraries
 - [Kutils](https://github.com/hazae41/mc-kutils) - ultimate Kotlin library for Minecraft plugin development
 - [Logback](https://github.com/qos-ch/logback) (optional) - get deep debug and trace logs
