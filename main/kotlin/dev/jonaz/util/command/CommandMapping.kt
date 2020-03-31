@@ -1,4 +1,4 @@
-package change.me.util.command
+package dev.jonaz.util.command
 
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)

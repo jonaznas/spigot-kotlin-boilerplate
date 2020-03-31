@@ -1,6 +1,6 @@
-package change.me.config
+package dev.jonaz.config
 
-import change.me.util.exposed.DatabaseValidator
+import dev.jonaz.util.exposed.DatabaseValidator
 import change.me.util.plugin.Instance
 import com.zaxxer.hikari.HikariConfig
 

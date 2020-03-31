@@ -1,6 +1,6 @@
-package change.me.util.exposed
+package dev.jonaz.util.exposed
 
-import change.me.config.HikariConfiguration
+import dev.jonaz.config.HikariConfiguration
 import com.zaxxer.hikari.HikariDataSource
 import org.jetbrains.exposed.sql.Database
 

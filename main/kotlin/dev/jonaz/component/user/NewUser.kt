@@ -1,6 +1,6 @@
 package change.me.component.user
 
-import change.me.model.database.UsersModel
+import dev.jonaz.model.database.UsersModel
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.transactions.transaction
 

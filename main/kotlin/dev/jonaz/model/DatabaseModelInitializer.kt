@@ -1,6 +1,6 @@
-package change.me.model
+package dev.jonaz.model
 
-import change.me.model.database.UsersModel
+import dev.jonaz.model.database.UsersModel
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 

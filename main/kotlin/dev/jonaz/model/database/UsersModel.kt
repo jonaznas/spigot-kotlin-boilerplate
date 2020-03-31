@@ -1,4 +1,4 @@
-package change.me.model.database
+package dev.jonaz.model.database
 
 import org.jetbrains.exposed.sql.Table
 

@@ -1,12 +1,12 @@
 @file:Suppress("unused")
 
-package change.me
+package dev.jonaz
 
-import change.me.model.DatabaseModelInitializer
-import change.me.util.command.CommandInitializer
-import change.me.util.exposed.DatabaseInitializer
+import dev.jonaz.model.DatabaseModelInitializer
+import dev.jonaz.util.command.CommandInitializer
+import dev.jonaz.util.exposed.DatabaseInitializer
 import change.me.util.plugin.Instance
-import change.me.util.plugin.PluginConfig
+import dev.jonaz.util.plugin.PluginConfig
 import hazae41.minecraft.kutils.bukkit.info
 import org.bukkit.plugin.java.JavaPlugin
 

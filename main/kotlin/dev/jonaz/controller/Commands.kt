@@ -1,9 +1,9 @@
 @file:Suppress("unused", "UNUSED_PARAMETER")
 
-package change.me.controller
+package dev.jonaz.controller
 
 import change.me.component.user.NewUser
-import change.me.util.command.CommandMapping
+import dev.jonaz.util.command.CommandMapping
 import hazae41.minecraft.kutils.bukkit.msg
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
