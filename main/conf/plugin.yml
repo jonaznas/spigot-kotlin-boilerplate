@@ -1,0 +1,10 @@
+name: "_KotlinSpigot"
+version: 1.0.0
+author: Jonaznas
+main: dev.jonaz.Main
+
+commands:
+  abc:
+    usage: /<command>
+  test:
+    usage: /<command>
