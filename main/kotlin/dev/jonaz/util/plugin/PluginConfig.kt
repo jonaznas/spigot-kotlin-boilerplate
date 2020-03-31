@@ -1,6 +1,6 @@
 package dev.jonaz.util.plugin
 
-import change.me.util.plugin.Instance
+import dev.jonaz.util.plugin.Instance
 import org.bukkit.configuration.file.FileConfiguration
 
 class PluginConfig {

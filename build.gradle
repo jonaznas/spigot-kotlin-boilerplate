@@ -5,7 +5,7 @@ plugins {
     id "net.minecrell.plugin-yml.bukkit" version "0.3.0"
 }
 
-group = "change.me"
+group = "dev.jonaz"
 shadowJar.archiveName = 'plugin.jar'
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -75,7 +75,7 @@ task startDevServer(dependsOn: ['copyPluginToTestserver', 'setupDevServer'], typ
 }
 
 bukkit {
-    main = "change.me.Main"
+    main = "dev.jonaz.Main"
     name = "KotlinSpigot"
     apiVersion = "1.13"
     load = "STARTUP"

@@ -1,7 +1,7 @@
 package dev.jonaz.util.command
 
-import dev.jonaz.controller.Commands
-import change.me.util.plugin.Instance
+import dev.jonaz.util.plugin.Instance
+import dev.jonaz.Main
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.bukkit.command.Command
@@ -14,7 +14,7 @@ import java.lang.reflect.Method
 class CommandInitializer {
 
     fun defineCommands() {
-        val reflections = Reflections(Commands::class.java, MethodAnnotationsScanner())
+        val reflections = Reflections(Main::class.java, MethodAnnotationsScanner())
         val annotated = reflections.getMethodsAnnotatedWith(CommandMapping::class.java)
 
         for (method in annotated) {

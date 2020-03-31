@@ -1,6 +1,6 @@
 package dev.jonaz.util.exposed
 
-import change.me.util.plugin.Instance
+import dev.jonaz.util.plugin.Instance
 import hazae41.minecraft.kutils.bukkit.warning
 
 class DatabaseValidator(

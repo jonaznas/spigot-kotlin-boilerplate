@@ -1,4 +1,4 @@
-package change.me.component.user
+package dev.jonaz.component.user
 
 import dev.jonaz.model.database.UsersModel
 import org.jetbrains.exposed.sql.insert

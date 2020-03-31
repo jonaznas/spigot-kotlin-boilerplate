@@ -1,4 +1,4 @@
-package change.me.util.plugin
+package dev.jonaz.util.plugin
 
 import org.bukkit.plugin.java.JavaPlugin
 
