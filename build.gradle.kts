@@ -35,6 +35,7 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-dao:0.22.1")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.22.1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61")
+    implementation("org.jetbrains.exposed:exposed-java-time:0.22.1")
 
     shadow("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
