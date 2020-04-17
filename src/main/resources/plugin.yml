@@ -1,0 +1,10 @@
+name: "spigot-kotlin-boilerplate"
+version: 1.0.0
+author: Jonaznas
+main: dev.jonaz.plugin.Main
+
+commands:
+  abc:
+    usage: /<command>
+  test:
+    usage: /<command>
