@@ -18,15 +18,3 @@ To use this project just clone this repository and import the gradle project.
 #### Database
 
 The Database is configured to PostgreSQL. To change it to MySQL, Oracle, SQLite, H2 or SQL Server take a look at [this documentation](https://github.com/JetBrains/Exposed/wiki/DataBase-and-DataSource)
-
-#### Plugin.yml
-You can configure the plugin.yml at the bottom of the `build.gradle` file
-
-#### Debug server
-
-In this project you get a configured development server in gradle. To get started you have to put your spigot or paperspigot jar in `debug/config`. Name it `spigot.jar`.
-To start the dev server run the following gradle tasks:
-
-1. ```clean``` (in group "_debug")
-2. ```jar``` (in group "build")
-3. ```startDevServer``` (in group "_debug")
