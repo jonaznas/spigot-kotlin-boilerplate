@@ -8,11 +8,11 @@ class HikariConfiguration {
     private val config = HikariConfig()
     private val plugin = Instance.plugin
 
-    private val dbHost: String? = plugin.config.getString("database.host")
-    private val dbPort: String? = plugin.config.getString("database.port") ?: "5432"
-    private val dbName: String? = plugin.config.getString("database.name")
-    private val dbUser: String? = plugin.config.getString("database.user")
-    private val dbPass: String? = plugin.config.getString("database.pass")
+    private val dbHost: String? = plugin.config.getString("database_host")
+    private val dbPort: String? = plugin.config.getString("database_port") ?: "5432"
+    private val dbName: String? = plugin.config.getString("database_name")
+    private val dbUser: String? = plugin.config.getString("database_user")
+    private val dbPass: String? = plugin.config.getString("database_pass")
 
     init {
         DatabaseValidator(

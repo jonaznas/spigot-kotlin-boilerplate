@@ -21,10 +21,10 @@ class DatabaseValidator(
 
     private fun checkExist(): Pair<Boolean, String> {
         return when (null) {
-            dbHost -> Pair(false, "database.host")
-            dbName -> Pair(false, "database.name")
-            dbUser -> Pair(false, "database.user")
-            dbPass -> Pair(false, "database.pass")
+            dbHost -> Pair(false, "database_host")
+            dbName -> Pair(false, "database_name")
+            dbUser -> Pair(false, "database_user")
+            dbPass -> Pair(false, "database_pass")
             else -> Pair(true, "")
         }
     }
