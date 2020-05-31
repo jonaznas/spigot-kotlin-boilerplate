@@ -14,7 +14,7 @@ import org.bukkit.command.CommandSender
  */
 class DatabaseCommands {
 
-    @CommandMapping("test")
+    @CommandMapping("db")
     fun testCommand(sender: CommandSender, cmd: Command, label: String, args: Array<String>) {
         val newUser = NewUser(sender.name)
         val insertId = newUser.insertByName()

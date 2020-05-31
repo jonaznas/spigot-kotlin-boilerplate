@@ -21,6 +21,7 @@ class PluginConfig {
         config.addDefault("database.user", "username")
         config.addDefault("database.pass", "password")
         config.addDefault("database.name", "database")
+        config.set("errors.permission", "You cant do that")
         save()
     }
 
